@@ -4,7 +4,7 @@
 #include <string>
 
 class Sort {
-    public:
+    protected:
         int arr[10];
     
     public:
