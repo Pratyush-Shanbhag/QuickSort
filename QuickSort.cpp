@@ -3,10 +3,10 @@
 
 using namespace std;
 
-void QuickSort::partition() {
+void QuickSort::partition(int lindex, int rindex) {
 
 }
 
-void QuickSort::sort() {
+void QuickSort::sort(int lindex, int rindex) {
 
 }
