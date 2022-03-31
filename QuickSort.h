@@ -6,6 +6,7 @@
 
 class QuickSort: public Sort {
     public:
+        void partition();
         void sort();
 };
 
