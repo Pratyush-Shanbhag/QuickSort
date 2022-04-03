@@ -7,7 +7,7 @@
 class QuickSort: public Sort {
     public:
         void swap(int*, int*);
-        void partition(int, int);
+        int partition(int, int);
         void sort(int, int);
 };
 
