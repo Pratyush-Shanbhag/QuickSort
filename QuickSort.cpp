@@ -24,12 +24,16 @@ int QuickSort::partition(int lindex, int rindex) {
   return i;
 }
 
-void QuickSort::sort(int lindex, int rindex) {
+void QuickSort::quickSort(int lindex, int rindex) {
     if (lindex < rindex) {
         int pivot = partition(lindex, rindex);
 
-        sort(lindex, pivot - 1);
+        quickSort(lindex, pivot - 1);
 
-        sort(pivot + 1, rindex);
+        quickSort(pivot + 1, rindex);
   }
+}
+
+void QuickSort::sort() {
+    quickSort(0, 9);
 }

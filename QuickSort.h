@@ -8,7 +8,8 @@ class QuickSort: public Sort {
     public:
         void swap(int*, int*);
         int partition(int, int);
-        void sort(int, int);
+        void quickSort(int, int);
+        void sort();
 };
 
 #endif
