@@ -14,9 +14,7 @@ int QuickSort::partition(int lindex, int rindex) {
     int i = lindex - 1;
 
     for (int j = lindex; j < rindex; j++) {
-        if (arr[j] <= pivot) {  
-            i++;
-      
+        if (arr[j] <= pivot && ++i != j) {        
             swap(&arr[i], &arr[j]);
         }
   }
