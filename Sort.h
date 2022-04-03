@@ -8,7 +8,7 @@ class Sort {
         int arr[10];
     
     public:
-        void readFile(string fileName);
+        void readFile(std::string fileName);
         void writeFile();
         virtual void sort() = 0;
         void displayArray();
