@@ -27,5 +27,11 @@ int QuickSort::partition(int lindex, int rindex) {
 }
 
 void QuickSort::sort(int lindex, int rindex) {
+    if (lindex < rindex) {
+        int pivot = partition(lindex, rindex);
 
+        sort(lindex, pivot - 1);
+
+        sort(pivot + 1, rindex);
+  }
 }
