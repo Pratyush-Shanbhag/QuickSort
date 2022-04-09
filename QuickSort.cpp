@@ -35,5 +35,5 @@ void QuickSort::quickSort(int lindex, int rindex) {
 }
 
 void QuickSort::sort() {
-    quickSort(0, 9);
+    quickSort(0, static_cast<int>(sizeof arr / sizeof arr[0]));
 }

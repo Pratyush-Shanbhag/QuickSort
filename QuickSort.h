@@ -9,7 +9,7 @@ class QuickSort: public Sort {
         void swap(int*, int*);
         int partition(int, int);
         void quickSort(int, int);
-        void sort();
+        virtual void sort();
 };
 
 #endif
